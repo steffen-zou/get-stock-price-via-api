@@ -23,7 +23,7 @@ result_list <- vector(mode="list", length=length(ticker_list))
         cat("API request for ", symbol, ".\n", sep="")
         
         api_url <- 
-            paste0("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED"
+            paste0("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY"
                    , "&symbol=", symbol
                    ,"&apikey=", apikey)
         
